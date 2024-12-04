@@ -1,0 +1,71 @@
+#sports-packages {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap; /* Ensure items stay side by side */
+  gap: 20px;
+  padding: 40px;
+}
+
+.package-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Make sure packages are spaced evenly */
+}
+
+.package {
+  background-color: #bdf6b3;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+}
+
+.package:hover {
+  transform: translateY(-10px);
+}
+
+.package h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.package .description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.package .pricing {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.package .pricing li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.package .pricing li strong {
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .package {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .package {
+    width: 100%;
+  }
+}

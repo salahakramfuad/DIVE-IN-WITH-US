@@ -1,0 +1,62 @@
+#body {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.packages {
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.packages li {
+  background-color: #e7ecb8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px; /* Width for each card */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.packages li:hover {
+  transform: translateY(-10px); /* Hover effect */
+}
+
+.packages li span {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.packages li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.packages li div {
+  padding: 20px;
+}
+
+.packages li h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.packages li p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .packages {
+    flex-direction: column;
+    align-items: center;
+  }
+}

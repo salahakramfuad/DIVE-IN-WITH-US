@@ -1,0 +1,36 @@
+/* Contact Container */
+.contact-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fedc98;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Info Styles */
+.contact-info {
+  font-size: 1rem;
+
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Google Map Styles */
+.google-map {
+  text-align: center;
+  margin-top: 20px;
+}
